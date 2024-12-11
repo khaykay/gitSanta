@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Combo&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+::after,
+::before,
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bg-night {
+  background-color: linear-gradient(to bottom, #001f3f 0%, #000000 100%);
+}
+.action-page-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    246.77deg,
+    rgba(0, 0, 0, 0.8) 6.58%,
+    rgba(1, 1, 1, 0.68) 27.86%,
+    rgba(2, 2, 2, 0.56) 49.13%,
+    rgba(3, 3, 3, 0.68) 69.95%,
+    rgba(4, 4, 4, 0.8) 90.77%
+  );
+}
+.playfair {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.combo {
+  font-family: "Combo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
