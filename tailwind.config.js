@@ -3,7 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        chakra: ["Chakra Petch", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
+        christmas: ["Mountains of Christmas", "cursive"],
+      },
+    },
   },
   plugins: [],
 };
