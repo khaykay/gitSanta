@@ -3,7 +3,7 @@ import { assets } from "../../public/assets/images";
 
 const ActionPage = () => {
   return (
-    <div className="action-page-container bg-[url('./assets/bg.png')] bg-center bg-night bg-no-repeat bg-cover h-screen w-screen flex justify-center items-center px-3 md:px-0">
+    <div className="h-screen flex justify-center items-center px-3 md:px-0">
       <section className="z-10 text-center h-[8.8rem] flex flex-col justify-between items-center">
         <span>
           <h4 className="playfair text-[#FDAC31] text-[1.5rem] md:text-[2.5rem] 2xl:text-[5rem] ">
