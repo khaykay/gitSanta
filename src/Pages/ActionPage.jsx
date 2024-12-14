@@ -9,7 +9,7 @@ const ActionPage = () => {
           <h4 className="font-christmas text-[#FDAC31] text-[1.5rem] md:text-[2.5rem] 2xl:text-[5rem] ">
             Are Your Commit Logs Merry And Bright?
           </h4>
-          <p className="text-[0.80rem] md:text-[1.35rem] 2xl:text-[2.5rem] text-yellow-50 font-nunito font-normal">
+          <p className="text-[0.80rem] md:text-[1.23rem] 2xl:text-[2.3rem] text-yellow-50 font-nunito font-normal">
             Let’s find out if you’re getting Santa’s seal of approval
           </p>
         </span>
