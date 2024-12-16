@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Combo&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mountains+of+Christmas:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mountains+of+Christmas:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,23 +13,31 @@
   margin: 0;
   box-sizing: border-box;
 }
-.text-grad{
-  background: linear-gradient(0deg, #FCAB31 0.3%, #AC6B13 84.31%, #9D5E0D 100%);
+.text-grad {
+  background: linear-gradient(0deg, #fcab31 0.3%, #ac6b13 84.31%, #9d5e0d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
-.begin:hover{
+.begin:hover {
   color: rgba(255, 255, 255, 0.911);
   scale: 90%;
 }
-main{
-  background-image: linear-gradient(40deg, black, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.753), black),url(./assets/bg.png);
+main {
+  background-image: linear-gradient(
+      40deg,
+      black,
+      rgba(0, 0, 0, 0.753),
+      rgba(0, 0, 0, 0.322),
+      rgba(0, 0, 0, 0.753),
+      black
+    ),
+    url(./assets/bg.png);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
-main::before{
+main::before {
   content: "";
   position: absolute;
   top: 0;
@@ -67,4 +75,15 @@ main::before{
   font-family: "Combo", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+.button-bg {
+  background: rgb(171, 30, 32);
+  background: linear-gradient(
+    180deg,
+    rgba(171, 30, 32, 1) 0%,
+    rgba(171, 30, 32, 1) 45%,
+    rgba(171, 30, 32, 1) 55%,
+    rgba(149, 26, 27, 1) 60%,
+    rgba(149, 26, 27, 1) 77%
+  );
 }

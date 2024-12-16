@@ -51,7 +51,7 @@ const BeginPage = () => {
           >
             <button
               onClick={playAudio}
-              className="w-[220px]  before:w-full before:absolute overflow-hidden before:h-[50%] before:bg-black before:opacity-[0.13] before:bottom-0 before:left-0 relative h-[53px] border-[3px] rounded-[8px] border-b-[#B5761A] border-[#F3A42D] bg-[#AB1E1F] text-white font-chakra font-semibold text-[20px]"
+              className="w-[220px] h-[53px] border-[3px] rounded-[8px] border-b-[#B5761A] border-[#F3A42D] button-bg text-white font-chakra font-semibold text-[20px]"
             >
               <span className="relative z-[2]">BEGIN</span>
             </button>
