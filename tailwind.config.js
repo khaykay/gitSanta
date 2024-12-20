@@ -7,6 +7,8 @@ export default {
       fontFamily: {
         chakra: ["Chakra Petch", "sans-serif"],
         nunito: ["Nunito", "sans-serif"],
+        young: ["Young Serif", "sans-serif"],
+        courgette: ["Courgette", "sans-serif"],
         christmas: ["Mountains of Christmas", "cursive"],
       },
     },
