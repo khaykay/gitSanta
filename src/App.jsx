@@ -20,6 +20,32 @@ const App = () => {
 
 export default App;
 
+// import React from "react";
+// import { Route, RouterProvider, Routes } from "react-router-dom";
+// import Snowfall from "react-snowfall";
+// import BeginPage from "./Pages/BeginPage";
+// import ActionPage from "./Pages/ActionPage";
+
+// const App = () => {
+//   return (
+//     <main className="relative h-screen overflow-x-clip">
+//       <Snowfall
+//         speed={[0.5, 0.7]}
+//         style={{ zIndex: 10 }}
+//         color="rgba(255, 255, 255, 0.911)"
+//         snowflakeCount={80}
+//         wind={[-0.1, 0.1]}
+//       />
+//       <Routes>
+//         <Route path="/" element={<BeginPage onPress={playAudio} />} />
+//         <Route path="/search" element={<ActionPage />} />
+//       </Routes>
+//     </main>
+//   );
+// };
+
+// export default App;
+
 // import React, { useRef, useState } from "react";
 // import ActionPage from "./Pages/ActionPage";
 // import { Route, RouterProvider, Routes } from "react-router-dom";
