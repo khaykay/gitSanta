@@ -1,18 +1,10 @@
 import React, { useRef, useState } from "react";
-
-import ActionPage from "./Pages/ActionPage";
 import { Route, RouterProvider, Routes } from "react-router-dom";
-// import router from "../routes";
 import Snowfall from "react-snowfall";
 import BeginPage from "./Pages/BeginPage";
+import ActionPage from "./Pages/ActionPage";
 import GiftPage from "./Pages/GiftPage";
-import { assets } from "../public/assets/images"
-
-import { Route, RouterProvider, Routes } from "react-router-dom";
-import Snowfall from "react-snowfall";
-import BeginPage from "./Pages/BeginPage";
-import ActionPage from "./Pages/ActionPage";
-
+import { assets } from "../public/assets/images";
 
 const App = () => {
   const audioRef = useRef(null);
@@ -30,9 +22,7 @@ const App = () => {
   };
   return (
     <main className="relative h-screen overflow-x-clip">
-
       <audio ref={audioRef} src={assets.song} loop className="hidden" />;
-
       <Snowfall
         speed={[0.5, 0.7]}
         style={{ zIndex: 5 }}
@@ -43,9 +33,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<BeginPage onPress={playAudio} />} />
         <Route path="/search" element={<ActionPage />} />
-
         <Route path="/gift" element={<GiftPage />} />
-
       </Routes>
     </main>
   );

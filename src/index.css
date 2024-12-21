@@ -103,19 +103,16 @@ main::before {
   );
 }
 
-
-
-
 .gift-hold {
   box-shadow: 0 0 0 5px transparent;
-  animation:  moveBorder 3s linear infinite, rotate 3s linear infinite;
+  animation: moveBorder 3s linear infinite, rotate 3s linear infinite;
 }
 
 @keyframes rotate {
   0% {
     rotate: 0.8deg;
   }
-  50%{
+  50% {
     rotate: -0.8deg;
   }
   100% {
@@ -144,7 +141,7 @@ main::before {
     box-shadow: 3px 0 0 0 gold, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
-
+}
 .bg-loader {
   background: rgb(11, 22, 30);
   background: linear-gradient(
@@ -162,5 +159,4 @@ main::before {
   );
 
   backdrop-filter: blur(5px);
-
 }
