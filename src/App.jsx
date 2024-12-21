@@ -1,13 +1,11 @@
 import React from "react";
-// import ActionPage from "./Pages/ActionPage";
 import { RouterProvider } from "react-router-dom";
 import router from "../routes";
 import Snowfall from "react-snowfall";
-import Light from "./component/Light";
 
 const App = () => {
   return (
-    <main className="relative h-fit overflow-x-clip">
+    <main className="relative h-screen overflow-x-clip">
       <Snowfall
         speed={[0.5, 0.7]}
         style={{ zIndex: 10 }}

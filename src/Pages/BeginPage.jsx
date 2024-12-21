@@ -1,7 +1,5 @@
 import { assets } from "../../public/assets/images";
 import Light from "../component/Light";
-import lig from "../../public/assets/light.json";
-import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 import { useRef, useState } from "react";
 
@@ -21,39 +19,41 @@ const BeginPage = () => {
   };
 
   return (
-    <main className="h-screen relative flex flex-col justify-center">
+    <main className="h-screen relative flex flex-col justify-center ">
       <audio ref={audioRef} src={assets.song} loop className="hidden" />;
       <div className="light-holder absolute top-0">
         <div className="flex flex-col relative z-[30] mt-[8px]">
-          <Light className={"scale-[140%]"} />
+          <Light className={"scale-[240%] sm:scale-[140%] "} />
           <Light
-            className={"rotate-180 hue-rotate-[90deg] mt-[-7px] scale-[110%]"}
+            className={
+              "rotate-180 hue-rotate-[90deg] mt-2 md:mt-[-7px] scale-[240%] sm:scale-[110%]"
+            }
           />
         </div>
       </div>
       <div className="wrapper z-[5] md:mt-[-30px]">
         <div className="header flex flex-col items-center">
-          <div className="top flex justify-center items-center gap-5">
+          <div className="top flex justify-center items-center gap-3 sm:gap-5">
             <img src={assets.arrowLeft} className="w-[5rem]" alt="" />
-            <h3 className="text-grad text-white font-chakra font-semibold text-[28px]">
+            <h3 className="text-grad text-white font-chakra font-semibold text-sm sm:text-[28px] sm:leading-normal">
               Git
             </h3>
             <img src={assets.arrowRight} className="w-[5rem]" alt="" />
           </div>
           <img
             src={assets.santaText}
-            className="w-[45%] mt-[15px] rotate-[-0.4deg]"
+            className=" w-[65%] sm:w-[57%] md:w-[49%] mt-[15px] rotate-[-0.4deg]"
             alt=""
           />
           <Link
             to="/search"
-            className="hover:scale-95 transition-transform mt-[-40px]"
+            className="hover:scale-95 transition-transform mt-[-20px] sm:mt-[-50px] md:mt-[-40px] "
           >
             <button
               onClick={playAudio}
-              className="w-[220px] h-[53px] border-[3px] rounded-[8px] border-b-[#B5761A] border-[#F3A42D] button-bg text-white font-chakra font-semibold text-[20px]"
+              className="w-[138px] h-[38px] sm:w-[160px] sm:h-[47px] md:w-[220px] md:h-[53px] border-[3px] rounded-[8px] border-b-[#B5761A] border-[#F3A42D] button-bg text-white font-chakra font-semibold  text-center text-xs sm:text-lg"
             >
-              <span className="relative z-[2]">BEGIN</span>
+              BEGIN
             </button>
           </Link>
         </div>
@@ -66,7 +66,7 @@ const BeginPage = () => {
             className="w-[20px] rotate-180"
             alt=""
           />
-          <p className=" text-white font-chakra text-[13px] tracking-wider">
+          <p className="text-xs sm:text-sm text-white font-chakra text-[13px] tracking-wider">
             BEST EXPERIENCED WITH SOUND
           </p>
           <img

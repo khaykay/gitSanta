@@ -47,10 +47,10 @@ main::before {
   background-color: black;
   opacity: 0.44;
 }
-/* .bg-night {
+.bg-night {
   background-color: linear-gradient(to bottom, #001f3f 0%, #000000 100%);
 }
-.action-page-container::before {
+/*.action-page-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -86,4 +86,23 @@ main::before {
     rgba(149, 26, 27, 1) 60%,
     rgba(149, 26, 27, 1) 77%
   );
+}
+
+.bg-loader {
+  background: rgb(11, 22, 30);
+  background: linear-gradient(
+    69deg,
+    rgba(11, 22, 30, 0.8) 0%,
+    rgba(41, 74, 103, 0.5) 9%,
+    rgba(71, 126, 175, 0.5) 18%,
+    rgba(28, 52, 74, 0.8) 30%,
+    rgba(7, 11, 16, 0.8) 49%,
+    rgba(24, 55, 91, 0.5) 59%,
+    rgba(14, 46, 81, 0.5) 67%,
+    rgba(16, 36, 57, 0.8) 75%,
+    rgba(20, 45, 73, 0.5) 85%,
+    rgba(7, 16, 23, 0.5) 96%
+  );
+
+  backdrop-filter: blur(5px);
 }

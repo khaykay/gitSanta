@@ -11,6 +11,10 @@ export const assets = {
   speackerIcon: `${basePath}/sound.svg`,
   santaText: `${basePath}/santa-text.svg`,
 
+  //GIF
+  loader: `${basePath}/loader.gif`,
+  //JPG
+  bgLoader: `${basePath}/loader-bg.jpg`,
   //WAV
   song: `${basePath}/theme-song.wav`,
 };
