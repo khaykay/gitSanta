@@ -3,8 +3,11 @@ import Light from "../component/Light";
 import { Link } from "react-router-dom";
 
 const BeginPage = ({ onPress }) => {
-  return (
+
+    <main className="h-screen relative flex flex-col justify-center">
+
     <main className="h-screen relative flex flex-col justify-center ">
+
       <div className="light-holder absolute top-0">
         <div className="flex flex-col relative z-[30] mt-[8px]">
           <Light className={"scale-[240%] sm:scale-[140%] "} />
@@ -35,7 +38,11 @@ const BeginPage = ({ onPress }) => {
           >
             <button
               onClick={onPress}
+
+              className="w-[220px] h-[53px] border-[3px] rounded-[8px] border-b-[#B5761A] border-[#F3A42D] button-bg text-white font-chakra font-semibold text-[20px]"
+
               className="w-[138px] h-[38px] sm:w-[160px] sm:h-[47px] md:w-[220px] md:h-[53px] border-[3px] rounded-[8px] border-b-[#B5761A] border-[#F3A42D] button-bg text-white font-chakra font-semibold  text-center text-xs sm:text-lg"
+
             >
               BEGIN
             </button>
@@ -45,7 +52,7 @@ const BeginPage = ({ onPress }) => {
       <div className="border-y border-white/35 absolute left-0 bottom-[8dvh] py-[10px] w-full text-center flex justify-center">
         <div className="relative z-[2] flex items-center gap-[15px]">
           <img
-            // onClick={playAudio}
+
             src={assets.speackerIcon}
             className="w-[20px] rotate-180"
             alt=""
@@ -53,12 +60,16 @@ const BeginPage = ({ onPress }) => {
           <p className="text-xs sm:text-sm text-white font-chakra text-[13px] tracking-wider">
             BEST EXPERIENCED WITH SOUND
           </p>
+
+          <img src={assets.speackerIcon} className="w-[20px]" alt="" />
+
           <img
             // onClick={playAudio}
             src={assets.speackerIcon}
             className="w-[20px]"
             alt=""
           />
+
         </div>
       </div>
     </main>

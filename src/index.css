@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Combo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mountains+of+Christmas:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +14,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.zoom-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9 !important;
 }
 .text-grad {
   background: linear-gradient(0deg, #fcab31 0.3%, #ac6b13 84.31%, #9d5e0d 100%);
@@ -47,6 +60,7 @@ main::before {
   background-color: black;
   opacity: 0.44;
 }
+
 .bg-night {
   background-color: linear-gradient(to bottom, #001f3f 0%, #000000 100%);
 }
@@ -66,6 +80,7 @@ main::before {
     rgba(4, 4, 4, 0.8) 90.77%
   );
 } */
+
 .playfair {
   font-family: "Playfair Display SC", serif;
   font-weight: 700;
@@ -88,6 +103,48 @@ main::before {
   );
 }
 
+
+
+
+.gift-hold {
+  box-shadow: 0 0 0 5px transparent;
+  animation:  moveBorder 3s linear infinite, rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0.8deg;
+  }
+  50%{
+    rotate: -0.8deg;
+  }
+  100% {
+    rotate: 0.8deg;
+  }
+}
+
+@keyframes moveBorder {
+  0% {
+    box-shadow: 3px 0 0 0 gold, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
+      0 -3px 0 0 transparent;
+  }
+  25% {
+    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 gold, -3px 0 0 0 transparent,
+      0 -3px 0 0 transparent;
+  }
+  50% {
+    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 transparent, -3px 0 0 0 gold,
+      0 -3px 0 0 transparent;
+  }
+  75% {
+    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 transparent,
+      -3px 0 0 0 transparent, 0 -3px 0 0 gold;
+  }
+  100% {
+    box-shadow: 3px 0 0 0 gold, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
+      0 -3px 0 0 transparent;
+  }
+
 .bg-loader {
   background: rgb(11, 22, 30);
   background: linear-gradient(
@@ -105,4 +162,5 @@ main::before {
   );
 
   backdrop-filter: blur(5px);
+
 }
