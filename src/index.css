@@ -15,6 +15,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  overflow: hidden;
+}
+
 .zoom-background {
   position: absolute;
   top: 0;
@@ -105,7 +109,19 @@ main::before {
 
 .gift-hold {
   box-shadow: 0 0 0 5px transparent;
-  animation: moveBorder 3s linear infinite, rotate 3s linear infinite;
+  animation:  rotate 3s linear infinite;
+}
+
+@keyframes scale {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 100.7%;
+  }
+  100% {
+    scale: 100%;
+  }
 }
 
 @keyframes rotate {
@@ -122,23 +138,23 @@ main::before {
 
 @keyframes moveBorder {
   0% {
-    box-shadow: 3px 0 0 0 gold, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
+    box-shadow: 3px 0 0 0 red, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
   25% {
-    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 gold, -3px 0 0 0 transparent,
+    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 red, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
   50% {
-    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 transparent, -3px 0 0 0 gold,
+    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 transparent, -3px 0 0 0 red,
       0 -3px 0 0 transparent;
   }
   75% {
     box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 transparent,
-      -3px 0 0 0 transparent, 0 -3px 0 0 gold;
+      -3px 0 0 0 transparent, 0 -3px 0 0 red;
   }
   100% {
-    box-shadow: 3px 0 0 0 gold, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
+    box-shadow: 3px 0 0 0 red, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
 }

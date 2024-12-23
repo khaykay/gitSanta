@@ -7,6 +7,8 @@ export const assets = {
   Santa: `${basePath}/santa.png`,
   Balls: `${basePath}/balls.png`,
   GiftBox: `${basePath}/gift-box.png`,
+  SantaWithBox: `${basePath}/santa-with-box.png`,
+  SadSanta: `${basePath}/sad-santa.png`,
 
   //SVG
   arrowLeft: `${basePath}/arrow-left.svg`,
