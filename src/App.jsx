@@ -5,9 +5,16 @@ import BeginPage from "./Pages/BeginPage";
 import ActionPage from "./Pages/ActionPage";
 import GiftPage from "./Pages/GiftPage";
 import { assets } from "../public/assets/images";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Loader from "./component/Loader";
 
+
 const App = () => {
+  Aos.init({
+    duration: 1800,
+    offset: 80,
+  });
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const playAudio = () => {
@@ -22,8 +29,11 @@ const App = () => {
     }
   };
   return (
-    <main className="">
-      {/* <audio ref={audioRef} src={assets.song} loop className="hidden" />; */}
+
+    <main className="relative h-screen overflow-x-clip">
+      <div className="hidden">
+        <audio ref={audioRef} src={assets.song} loop className="" />;
+      </div>
       <Snowfall
         speed={[0.5, 0.7]}
         style={{ zIndex: 5 }}
