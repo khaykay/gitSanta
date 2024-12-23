@@ -53,7 +53,9 @@ main {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
+
 main::before {
   content: "";
   position: absolute;
@@ -176,3 +178,70 @@ main::before {
 
   backdrop-filter: blur(5px);
 }
+
+/* .typewriter-text {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  border-right: 2px solid #ffffff;
+  animation: typing 4s steps(100, end) 1, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: #ffffff;
+  }
+  to {
+    border-right-color: transparent;
+  }
+} */
+
+/* .typewriter-text {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  overflow: hidden;
+  border-right: 2px solid #ffffff;
+  width: 0;
+  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+} */
+
+/* .typewriter-text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8rem;
+  white-space: pre-wrap; 
+  overflow: hidden;
+  border-right: 2px solid #ffffff;
+  width: 0;
+  animation: typing 6s steps(50, end), blink 0.75s step-end infinite;
+  line-height: 1.5; 
+  max-width: 90%; 
+  text-align: center; 
+} */
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: #ffffff;
+  }
+  to {
+    border-right-color: transparent;
+  }
+} */

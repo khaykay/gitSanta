@@ -9,7 +9,9 @@ export const assets = {
   GiftBox: `${basePath}/gift-box.png`,
   SantaWithBox: `${basePath}/santa-with-box.png`,
   SadSanta: `${basePath}/sad-santa.png`,
-
+  speechPanel: `${basePath}/speechPanel.png`,
+  speechBubble: `${basePath}/speechBubble.png`,
+  bigLoader: `${basePath}/jsansn.png`,
   //SVG
   arrowLeft: `${basePath}/arrow-left.svg`,
   arrowRight: `${basePath}/arrow-right.svg`,
@@ -20,6 +22,7 @@ export const assets = {
   loader: `${basePath}/loader.gif`,
   //JPG
   bgLoader: `${basePath}/loader-bg.jpg`,
+
   //WAV
   song: `${basePath}/theme-song.wav`,
 

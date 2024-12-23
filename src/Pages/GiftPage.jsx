@@ -5,13 +5,14 @@ import { assets } from "../../public/assets/images";
 const GiftPage = () => {
   const [isVisible, setIsVisible] = useState(false);
   return (
+
     <>
       <GiftReveal isVisible={isVisible} setIsVisible={setIsVisible} />
       <div
         className={`h-screen w-full bg-red-400/0 backdrop-blur-[5px] flex flex-col overflow-hidden gap-y-[25px] justify-center items-center absolute top-0 ${
           isVisible ? "hidden" : ""
         }`}
-      >
+
         <div className="light-holder absolute top-0">
           <div className="flex flex-col relative z-[30] mt-[8px]">
             <Light className={"scale-[240%] sm:scale-[140%] "} />
@@ -41,7 +42,7 @@ const GiftPage = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
