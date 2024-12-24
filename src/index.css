@@ -15,7 +15,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   overflow: hidden;
 }
 
@@ -39,6 +39,10 @@ body{
 .begin:hover {
   color: rgba(255, 255, 255, 0.911);
   scale: 90%;
+}
+input:focus {
+  outline: none;
+  border: none;
 }
 main {
   background-image: linear-gradient(
@@ -111,7 +115,7 @@ main::before {
 
 .gift-hold {
   box-shadow: 0 0 0 5px transparent;
-  animation:  rotate 3s linear infinite;
+  animation: rotate 3s linear infinite;
 }
 
 @keyframes scale {
