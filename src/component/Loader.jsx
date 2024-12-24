@@ -35,7 +35,7 @@ const Loader = () => {
           </div>
         </div>
       </div>
-      <div className="hidden sm:block max-w-[90%]">
+      <div className="hidden sm:block max-w-[65%]">
         <img src={assets.bigLoader} alt="" className="" />
       </div>
     </div>
