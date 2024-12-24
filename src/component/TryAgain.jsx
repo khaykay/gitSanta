@@ -9,7 +9,7 @@ function TryAgain() {
         data-aos-delay="100"
         data-aos-offset="10"
         src={assets.SadSanta}
-        className="w-[80px] md:w-[160px]"
+        className="w-[130px] md:w-[160px]"
         alt=""
       />
       <h1

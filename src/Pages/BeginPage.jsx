@@ -22,19 +22,19 @@ const BeginPage = ({ onPress }) => {
           <div
             data-aos="fade-up"
             data-aos-delay="100"
-            className="top flex justify-center items-center gap-3 sm:gap-5"
+            className="top flex justify-center items-center gap-2 sm:gap-5"
           >
-            <img src={assets.arrowLeft} className="w-[5rem]" alt="" />
-            <h3 className="text-grad text-white font-chakra font-semibold text-sm sm:text-[28px] sm:leading-normal">
+            <img src={assets.arrowLeft} className="w-[4rem] md:w-[5rem]" alt="" />
+            <h3 className="text-grad text-white font-chakra font-semibold text-[16px] sm:text-[28px] sm:leading-normal">
               Git
             </h3>
-            <img src={assets.arrowRight} className="w-[5rem]" alt="" />
+            <img src={assets.arrowRight} className="w-[4rem] md:w-[5rem]" alt="" />
           </div>
           <img
             data-aos="fade-up"
             data-aos-delay="200"
             src={assets.santaText}
-            className=" w-[65%] sm:w-[57%] md:w-[49%] mt-[15px] rotate-[-0.4deg]"
+            className=" w-[85%] sm:w-[57%] md:w-[49%] mt-[15px] rotate-[-0.4deg]"
             alt=""
           />
           <Link

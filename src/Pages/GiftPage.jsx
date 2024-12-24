@@ -26,10 +26,11 @@ const GiftPage = () => {
   // Extract contributions
   const { totalContributions } =
     data.user.contributionsCollection.contributionCalendar;
+
   return (
     <div>
       {/* Gift Reveal Component */}
-      <GiftReveal isVisible={isVisible} setIsVisible={setIsVisible} />
+      <GiftReveal commit={totalContributions} isVisible={isVisible} setIsVisible={setIsVisible} />
 
       {/* Main Container */}
       <div
@@ -66,7 +67,7 @@ const GiftPage = () => {
           {/* Reveal Button */}
           <p
             onClick={() => setIsVisible(true)}
-            className="font-young uppercase text-black text-[0.8rem] mt-5 bg-white/95 cursor-pointer gift-hold font-bold px-[10px] py-[10px] rounded-xl absolute left-[54.4%] translate-x-[-50%] bottom-[50px]"
+            className="font-young uppercase text-black text-[0.4rem] xss:text-[0.6rem] sm:text-[0.8rem] mt-5 bg-white/95 cursor-pointer gift-hold font-bold px-[5px] xm:px-[10px] py-[7px] xm:py-[10px] rounded-md xm:rounded-xl absolute left-[54.4%] translate-x-[-50%] bottom-[25px] xss:bottom-[35px] xm:bottom-[50px]"
           >
             Click to reveal!
           </p>

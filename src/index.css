@@ -163,7 +163,9 @@ main::before {
     box-shadow: 3px 0 0 0 red, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
+
 }
+
 .bg-loader {
   background: rgb(11, 22, 30);
   background: linear-gradient(

@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import Loader from "./component/Loader";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import Preloader from "./Pages/Preloader";
+import NewLoader from "./component/NewLoader";
 
 const token = import.meta.env.VITE_GITHUB_TOKEN;
 const client = new ApolloClient({
@@ -37,9 +38,11 @@ const App = () => {
       setIsPlaying(!isPlaying);
     }
   };
+  
   return (
     <ApolloProvider client={client}>
       <main className="relative h-screen overflow-x-clip">
+        {/* <img src={assets.speakerIcon} className="absolute w-[80px] px-[15px] top-[100px] right-[50px] " alt="" /> */}
         <div className="hidden">
           <audio ref={audioRef} src={assets.song} loop className="" />;
         </div>
