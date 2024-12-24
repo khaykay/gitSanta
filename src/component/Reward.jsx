@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 import { assets } from "../../public/assets/images";
 
 function Reward({ isVisible }) {
+  const [showConfetti, setShowConfetti] = useState(false);
+  useEffect(() => {
+    if (isVisible) {
+      setShowConfetti(true);
+      setTimeout(() => setShowConfetti(false), 3500);
+    }
+  }, [isVisible]);
+
   return (
     <>
       <div className="absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        {isVisible && (
+        {showConfetti && (
           <ConfettiExplosion
             zIndex={5}
             force={0.8}
             width={1000}
-            particleCount={300}
+            particleCount={250}
             duration={3500}
             particleSize={6}
           />
@@ -35,7 +43,8 @@ function Reward({ isVisible }) {
       </div>
       <img
         data-aos="fade-up"
-        data-aos-delay="400"
+        data-aos-delay="300"
+        data-aos-offset="10"
         src={assets.medal}
         className="w-[200px] md:w-[230px]"
         alt=""

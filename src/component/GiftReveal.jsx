@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Reward from "./Reward";
 import TryAgain from "./TryAgain";
 
-const GiftReveal = ({ isVisible }) => {
-  const [isReward, setIsReward] = useState(true);
+const GiftReveal = ({ isVisible, commit }) => {
+  const [isReward, setIsReward] = useState(null);
+
+ useEffect(() => {
+    if (commit >= 1000) {
+      setIsReward(true);
+    } else {
+      setIsReward(false);
+    }
+  }, [commit]);
 
   return (
     <>
+    
       {isVisible && (
         <div
           data-aos="zoom-up"
@@ -24,7 +33,7 @@ const GiftReveal = ({ isVisible }) => {
             to="/"
             className="hover:scale-95 transition-transform"
           >
-            <button className="w-[170px] h-[45px] border-[3px] rounded-[8px] border-b-[#B5761A] border-[#F3A42D] button-bg text-white font-chakra font-medium text-[15.5px]">
+            <button className="w-[150px] md:w-[170px] h-[40px] md:h-[45px] border-[3px] rounded-[8px] border-b-[#B5761A] border-[#F3A42D] button-bg text-white font-chakra font-medium text-[15.5px]">
               <span className="relative z-[2]">Finish</span>
             </button>
           </Link>

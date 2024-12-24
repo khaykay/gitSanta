@@ -11,6 +11,10 @@ export default {
         courgette: ["Courgette", "sans-serif"],
         christmas: ["Mountains of Christmas", "cursive"],
       },
+    screens: {
+      'xss': '300px',
+      'xm': '400px',
+    }
     },
   },
   plugins: [],
