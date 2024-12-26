@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import Reward from "./Reward";
 import TryAgain from "./TryAgain";
 
-const GiftReveal = ({ isVisible, commit }) => {
+const GiftReveal = ({ isVisible, commit, username }) => {
   const [isReward, setIsReward] = useState(null);
 
- useEffect(() => {
-    if (commit >= 1000) {
+  useEffect(() => {
+    if (commit >= 224) {
       setIsReward(true);
     } else {
       setIsReward(false);
@@ -16,15 +16,21 @@ const GiftReveal = ({ isVisible, commit }) => {
 
   return (
     <>
-    
       {isVisible && (
         <div
           data-aos="zoom-up"
           data-aos-delay="40"
           data-aos-offset="1"
-          className={`backdrop-blur-[30px] flex flex-col gap-y-[20px] md:gap-y-[40px] justify-center items-center absolute top-0 left-0 w-full h-screen bg-black/10 transition-all duration-[0.3s] `}
+          className={`backdrop-blur-[30px] flex flex-col  justify-evenly items-center w-full h-screen bg-black/10 transition-all duration-[0.3s] `}
         >
           {isReward ? <Reward isVisible={isVisible} /> : <TryAgain />}
+          <p className="text-yellow-100 combo">
+            {username} has made <span className="text-[#FDAC31]">{commit}</span>{" "}
+            commits in the past year!
+            <span>
+              {`  \t ⚠️ you need a minimum of 224 commits to qualify for santa's gift`}
+            </span>
+          </p>
 
           <Link
             data-aos="fade-up"

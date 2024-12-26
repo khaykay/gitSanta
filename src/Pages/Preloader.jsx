@@ -10,9 +10,9 @@ const Preloader = () => {
     const timeout = setTimeout(() => {
       // Navigate to gift page with data passed
       navigate("/gift", { state });
-    }, 4000);
+    }, 11000);
 
-    return () => clearTimeout(timeout); // Cleanup timeout
+    return () => clearTimeout(timeout);
   }, [navigate, state]);
 
   return (

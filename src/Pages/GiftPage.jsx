@@ -30,7 +30,12 @@ const GiftPage = () => {
   return (
     <div>
       {/* Gift Reveal Component */}
-      <GiftReveal commit={totalContributions} isVisible={isVisible} setIsVisible={setIsVisible} />
+      <GiftReveal
+        commit={totalContributions}
+        username={username}
+        isVisible={isVisible}
+        setIsVisible={setIsVisible}
+      />
 
       {/* Main Container */}
       <div

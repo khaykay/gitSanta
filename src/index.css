@@ -74,22 +74,6 @@ main::before {
 .bg-night {
   background-color: linear-gradient(to bottom, #001f3f 0%, #000000 100%);
 }
-/*.action-page-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(
-    246.77deg,
-    rgba(0, 0, 0, 0.8) 6.58%,
-    rgba(1, 1, 1, 0.68) 27.86%,
-    rgba(2, 2, 2, 0.56) 49.13%,
-    rgba(3, 3, 3, 0.68) 69.95%,
-    rgba(4, 4, 4, 0.8) 90.77%
-  );
-} */
 
 .playfair {
   font-family: "Playfair Display SC", serif;
@@ -163,7 +147,6 @@ main::before {
     box-shadow: 3px 0 0 0 red, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
-
 }
 
 .bg-loader {
@@ -185,69 +168,19 @@ main::before {
   backdrop-filter: blur(5px);
 }
 
-/* .typewriter-text {
-  font-family: "Courier New", Courier, monospace;
-  white-space: pre-wrap;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: top;
-  border-right: 2px solid #ffffff;
-  animation: typing 4s steps(100, end) 1, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(1px);
   }
-  to {
-    width: 100%;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes blink {
-  from {
-    border-right-color: #ffffff;
-  }
-  to {
-    border-right-color: transparent;
-  }
-} */
-
-/* .typewriter-text {
-  font-family: "Courier New", Courier, monospace;
-  white-space: pre-wrap;
-  overflow: hidden;
-  border-right: 2px solid #ffffff;
-  width: 0;
-  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
-} */
-
-/* .typewriter-text {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.8rem;
-  white-space: pre-wrap; 
-  overflow: hidden;
-  border-right: 2px solid #ffffff;
-  width: 0;
-  animation: typing 6s steps(50, end), blink 0.75s step-end infinite;
-  line-height: 1.5; 
-  max-width: 90%; 
-  text-align: center; 
-} */
-/* @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.fade-in-div {
+  animation: fadeIn 0.7s ease-out;
+  opacity: 1;
+  transform: translateY(0);
 }
-
-@keyframes blink {
-  from {
-    border-right-color: #ffffff;
-  }
-  to {
-    border-right-color: transparent;
-  }
-} */

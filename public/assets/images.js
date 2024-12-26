@@ -11,7 +11,7 @@ export const assets = {
   SadSanta: `${basePath}/sad-santa.png`,
   speechPanel: `${basePath}/speechPanel.png`,
   speechBubble: `${basePath}/speechBubble.png`,
-  bigLoader: `${basePath}/jsansn.png`,
+  bigLoader: `${basePath}/jsansn_.png`,
   //SVG
   arrowLeft: `${basePath}/arrow-left.svg`,
   arrowRight: `${basePath}/arrow-right.svg`,
@@ -20,6 +20,7 @@ export const assets = {
 
   //GIF
   loader: `${basePath}/loader.gif`,
+  grinch: `${basePath}/grinch_.gif`,
   //JPG
   bgLoader: `${basePath}/loader-bg.jpg`,
 
