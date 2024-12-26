@@ -128,25 +128,33 @@ main::before {
 
 @keyframes moveBorder {
   0% {
-    box-shadow: 3px 0 0 0 red, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
+    box-shadow: 3px 0 0 0 greenyellow, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
   25% {
-    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 red, -3px 0 0 0 transparent,
+    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 greenyellow, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
   50% {
-    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 transparent, -3px 0 0 0 red,
+    box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 transparent, -3px 0 0 0 greenyellow,
       0 -3px 0 0 transparent;
   }
   75% {
     box-shadow: 3px 0 0 0 transparent, 0 3px 0 0 transparent,
-      -3px 0 0 0 transparent, 0 -3px 0 0 red;
+      -3px 0 0 0 transparent, 0 -3px 0 0 greenyellow;
   }
   100% {
-    box-shadow: 3px 0 0 0 red, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
+    box-shadow: 3px 0 0 0 greenyellow, 0 3px 0 0 transparent, -3px 0 0 0 transparent,
       0 -3px 0 0 transparent;
   }
+}
+.grinch{
+  box-shadow: 0 0 0 5px transparent;
+  animation: moveBorder 5s linear infinite;
+}
+.grinch img{
+  object-position: center -45px;
+  
 }
 
 .bg-loader {
