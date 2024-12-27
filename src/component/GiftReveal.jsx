@@ -9,7 +9,7 @@ const GiftReveal = ({ isVisible, commit, username }) => {
   const [gift, setGift] = useState(null);
 
   useEffect(() => {
-    if (commit >= 20) {
+    if (commit >= 264) {
       const randomIndex = Math.floor(Math.random() * wallpapers.length);
       const selectedGift = wallpapers[randomIndex];
       setGift(selectedGift);
