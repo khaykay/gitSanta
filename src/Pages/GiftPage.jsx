@@ -17,7 +17,10 @@ const GiftPage = () => {
   if (!username || !data) {
     return (
       <div className="h-screen flex justify-center items-center text-center">
-        <p className="text-red-500">Something went wrong. Redirecting...</p>
+        <p className="text-red-500">
+          Something went wrong. You may not be connected to the internet .
+          Redirecting...
+        </p>
         {setTimeout(() => navigate("/"), 3000)}
       </div>
     );
