@@ -38,7 +38,7 @@ const GiftReveal = ({ isVisible, commit, username }) => {
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-offset="10"
-            className="text-yellow-100 combo w-full max-w-[450px] text-center mb-[20px] text-[8px] sm:text-xs 2xl:text:base"
+            className="text-yellow-100 combo w-full max-w-[450px] text-center my-[20px] text-[8.5px] sm:text-xs 2xl:text:base "
           >
             {username} has made <span className="text-[#FDAC31]">{commit}</span>{" "}
             commits in the past year!
@@ -57,6 +57,9 @@ const GiftReveal = ({ isVisible, commit, username }) => {
               <span className="relative z-[2]">Finish</span>
             </button>
           </Link>
+          <div className="text-white text-[6px] lg:text-xs tracking-[0.25rem] p-5">
+            made with ❤ by khaykay & danny
+          </div>
         </div>
       )}
     </>

@@ -12,6 +12,7 @@ export const assets = {
   speechPanel: `${basePath}/speechPanel.png`,
   speechBubble: `${basePath}/speechBubble.png`,
   bigLoader: `${basePath}/jsansn_.png`,
+  panel: `${basePath}/panel.jpg`,
   //SVG
   arrowLeft: `${basePath}/arrow-left.svg`,
   arrowRight: `${basePath}/arrow-right.svg`,
