@@ -21,17 +21,23 @@ const GiftReveal = ({ isVisible, commit, username }) => {
           data-aos="zoom-up"
           data-aos-delay="40"
           data-aos-offset="1"
-          className={`backdrop-blur-[30px] flex flex-col  justify-evenly items-center w-full h-screen bg-black/10 transition-all duration-[0.3s] `}
+          className={`backdrop-blur-[30px] flex flex-col justify-center items-center w-full h-screen bg-black/10 transition-all duration-[0.3s] px-[10px]`}
         >
           {isReward ? <Reward isVisible={isVisible} /> : <TryAgain />}
-          <p className="text-yellow-100 combo">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-offset="10"
+            className="text-yellow-100 combo w-full max-w-[450px] text-center mb-[20px]"
+          >
             {username} has made <span className="text-[#FDAC31]">{commit}</span>{" "}
             commits in the past year!
-            <span>
-              {`  \t ⚠️ you need a minimum of 224 commits to qualify for santa's gift`}
-            </span>
+            {!isReward && (
+              <span>
+                {`  \t ⚠️ you need a minimum of 224 commits to qualify for santa's gift`}
+              </span>
+            )}
           </p>
-
           <Link
             data-aos="fade-up"
             data-aos-delay="400"
